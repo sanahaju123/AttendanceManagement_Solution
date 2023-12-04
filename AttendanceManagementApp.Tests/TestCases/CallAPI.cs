@@ -17,11 +17,11 @@ namespace AttendanceManagementApp.Tests.TestCases
             Dictionary<string, TestCaseResultDto> testCaseResults = new Dictionary<string, TestCaseResultDto>();
             string customValue = System.IO.File.ReadAllText("../../../../../custom.ih");
             testResults.CustomData = customValue;
-            int earnedAttendance = 0;
+            int earnedScore = 0;
             String testStatus = "Failed";
             if (status.Equals("True"))
             {
-                earnedAttendance = 1;
+                earnedScore = 1;
                 testStatus = "Passed";
             }
 
@@ -29,8 +29,8 @@ namespace AttendanceManagementApp.Tests.TestCases
             {
                 MethodName = testName,
                 MethodType = type,
-                EarnedAttendance = earnedAttendance,
-                ActualAttendance = 1,
+                EarnedScore = earnedScore,
+                ActualScore = 1,
                 Status = testStatus,
                 IsMandatory = true
             });
