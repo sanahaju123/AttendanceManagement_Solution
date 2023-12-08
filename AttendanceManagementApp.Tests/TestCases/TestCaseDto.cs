@@ -10,8 +10,8 @@ namespace AttendanceManagementApp.Tests.TestCases
         {
             public string MethodName { get; set; }
             public string MethodType { get; set; }
-            public int? ActualAttendance { get; set; }
-            public int EarnedAttendance { get; set; }
+            public int? ActualScore { get; set; }
+            public int EarnedScore { get; set; }
             public string Status { get; set; }
             public bool IsMandatory { get; set; }
             public string ErroMessage { get; set; }
