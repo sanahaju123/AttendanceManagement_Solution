@@ -15,7 +15,7 @@ namespace AttendanceManagementApp.App_Start
             GlobalConfiguration.Configuration.EnableSwagger(c =>
             {
                 c.SingleApiVersion("v1", "Your API Name")
-                    .Description("A description of your API").Contact(attendance => attendance
+                    .Description("A description of your API").Contact(score => score
                         .Name("Your Name")
                         .Email("your@email.com"))
                     .TermsOfService("https://yourapp.com/terms")
